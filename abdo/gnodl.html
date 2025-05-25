@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="GO.css">
+</head>
+<body>
+    <Div style="text-align: center; margin-top: 50PX;">
+        <BR></BR>
+        <H1>ABDO RADY</H1>
+        <P>من فضلك ادخل المبلغ المطلوب معرفه قيمته بالدولار</P>
+   <input type="number" placeholder="USD" id="number1"><br>
+   <input  type="number"  placeholder="EGB"  id="number2">
+   <BUtton id="BT">احسب</BUtton>
+   <!-- <button onclick="location.reload()">relod</button> -->
+   <button  id="bu">relod</button>
+   <P id="I"></P>
+</Div>
+</body>
+<script>
+    let nm1 = document.getElementById("number1")
+    let nm2 = document.getElementById("number2")
+    let BT1 = document.getElementById("BT")
+    let bu =  document.getElementById(`bu`)
+
+    nm1.onkeyup =function(){  
+                BT1.addEventListener("click",function(){
+                nm2.value = nm1.value*49.88
+                nm2.style.width="200PX"
+                nm2.style.background="green"
+                document.getElementById("I").innerHTML=" A.R شكرا لاستخدامك برنامج "
+            })
+                          }
+
+    nm2.onkeyup =function(){
+            BT1.addEventListener("click",function(){
+                nm1.value = nm2.value/49.88
+               
+                nm1.style.width="200PX"
+                
+                nm1.style.background="green"
+                
+                                                   })
+        
+                          }
+
+
+    bu.addEventListener("click",function(){
+        
+        window.location.reload()
+                                        })
+
+
+    nm1.addEventListener("mouseenter",function(){
+        
+        nm1.setAttribute("title","المبلغ بالدولار")
+
+        
+    
+    })
+
+    nm2.addEventListener("mouseenter",function(){
+        
+        nm2.setAttribute("title","المبلغ  بالمصرى")
+
+        
+    
+    })
+     
+    
+    
+   
+    
+
+</script>
+</html>

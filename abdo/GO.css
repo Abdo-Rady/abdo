@@ -1,0 +1,31 @@
+
+ 
+body{
+    background-color: black;
+}
+div{
+    background-color: rgb(14, 60, 101);
+    height: 50vh;
+}
+div input{
+margin-top: 20PX;
+
+}
+label{
+    padding: 10PX;
+}
+#bu{
+    cursor: pointer;
+}
+#BT{
+    cursor: pointer;
+}
+input:hover{
+    background-color: brown;
+}
+ #BT:hover{
+    background-color: rgb(22, 91, 20);
+}
+#bu:hover{
+    background-color: rgb(16, 80, 14);
+}
